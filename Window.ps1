@@ -15,8 +15,18 @@
         # 4. Window Terminal config File
         # 5. PowerShell Config files
         # 6. PowerShell
-
         
+Write-Output"
+
+██╗    ██╗██╗███╗   ██╗██████╗  ██████╗ ██╗    ██╗███████╗    ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗
+██║    ██║██║████╗  ██║██╔══██╗██╔═══██╗██║    ██║██╔════╝    ██╔════╝██╔════╝██╔══██╗██║██╔══██╗╚══██╔══╝
+██║ █╗ ██║██║██╔██╗ ██║██║  ██║██║   ██║██║ █╗ ██║███████╗    ███████╗██║     ██████╔╝██║██████╔╝   ██║   
+██║███╗██║██║██║╚██╗██║██║  ██║██║   ██║██║███╗██║╚════██║    ╚════██║██║     ██╔══██╗██║██╔═══╝    ██║   
+╚███╔███╔╝██║██║ ╚████║██████╔╝╚██████╔╝╚███╔███╔╝███████║    ███████║╚██████╗██║  ██║██║██║        ██║   
+ ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝  ╚══╝╚══╝ ╚══════╝    ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   
+                                                                                                          
+"
+
 # Check if the script is running as administrator
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
@@ -30,13 +40,13 @@ if (-not $isAdmin) {
     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
     Install-Module -Name Terminal-Icons -Repository PSGallery
 
-
-    # Running Part: 
+    # Running Part:  
     # check for winget
     .\winget-check.ps1
     # check for scoop
     .\scoop_check.ps1
-
+    # instlling Fonts
+    .\install-fonts.ps1
     # Installing application
     .\installApp.ps1
 }
