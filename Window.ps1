@@ -1,9 +1,9 @@
 # Script Parts
+    # Admin Check 
     # Check system 
         # 1. Scoop Check 
         # 2. Winget Check
-        # 3. Admin Check 
-
+        
     #  Install application 
         # 1. Winget Install 
         # 2. Scoop install application
@@ -15,7 +15,7 @@
         # 4. Window Terminal config File
         # 5. PowerShell Config files
         # 6. PowerShell
-        
+
 Write-Output"
 
 ██╗    ██╗██╗███╗   ██╗██████╗  ██████╗ ██╗    ██╗███████╗    ███████╗ ██████╗██████╗ ██╗██████╗ ████████╗
@@ -36,28 +36,26 @@ if (-not $isAdmin) {
 } else {
     Write-Host "PowerShell session is running with administrator privileges."
     
-    #  Some commadn that are required
-    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-    Install-Module -Name Terminal-Icons -Repository PSGallery
+    try {
+        # Commands that are required
+        Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -ErrorAction Stop
+        Install-Module -Name Terminal-Icons -Repository PSGallery -ErrorAction Stop
 
-    # Running Part:  
-    # check for winget
-    .\winget-check.ps1
-    # check for scoop
-    .\scoop_check.ps1
-    # instlling Fonts
-    .\install-fonts.ps1
-    # Installing application
-    .\installApp.ps1
+        # Running Parts:
+
+        # Check for winget
+        .\winget-check.ps1
+        # Check for scoop
+        .\scoop_check.ps1
+        # Installing Fonts
+        .\install-fonts.ps1
+        # Installing application
+        .\installApp.ps1
+        # Moving Files
+        .\Files.ps1
+        
+    } catch {
+        Write-Host "❌ An error occurred: $_.Exception.Message" -ForegroundColor Red
+        Write-Host "Exiting script due to an error." -ForegroundColor Yellow
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
