@@ -145,12 +145,12 @@ symbol = "  "
 symbol = " "
 
 [shell]
-fish_indicator = ""
+fish_indicator = " "
 # powershell_indicator = "_"
-powershell_indicator = " "
-zsh_indicator = ""
-bash_indicator = ""
-unknown_indicator = "mystery shell"
+powershell_indicator = "  _ "
+zsh_indicator = "  "
+bash_indicator = "  "
+unknown_indicator = " "
 style = "cyan bold"
 disabled = false
 
