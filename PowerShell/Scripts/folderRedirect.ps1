@@ -16,3 +16,24 @@ function portfilo() {
 function simple_thread() {
     Set-Location "G:\Personal Projects\SimpleThread"
 }
+function download() {
+    Set-Location "E:\maraf\Downloads"
+}
+function documents() {
+    Set-Location "E:\maraf\Documents"
+}
+function desktop() {
+    Set-Location "E:\maraf\Desktop"
+}
+function pictures() {
+    Set-Location "E:\maraf\Pictures"
+}
+function videos() {
+    Set-Location "E:\maraf\Videos"
+}
+function music() {
+    Set-Location "E:\maraf\Music"
+}
+function home() {
+    Set-Location "E:\maraf"
+}

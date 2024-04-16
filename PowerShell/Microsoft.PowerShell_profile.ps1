@@ -4,8 +4,12 @@ neofetch
 Invoke-Expression (&starship init powershell)
 # this is the terminal icons for dir command
 Import-Module -Name Terminal-Icons
+# Import Recycle Module
+# Install-Module -Name Recycle
+# PRedice the command
 Set-PSReadLineOption -PredictionSource History
          
+
 . $PSScriptRoot\Scripts\sudo.ps1
 . $PSScriptRoot\Scripts\rm.ps1
 . $PSScriptRoot\Scripts\touch.ps1
@@ -20,6 +24,8 @@ Set-PSReadLineOption -PredictionSource History
 . $PSScriptRoot\Scripts\flutter_run.ps1
 . $PSScriptRoot\Scripts\git_status.ps1
 . $PSScriptRoot\Scripts\folderRedirect.ps1
+. $PSScriptRoot\Scripts\hugo.ps1
+. $PSScriptRoot\Scripts\editior.ps1
 
 
 # Import the Chocolatey Profile that contains the necessary code to enable

@@ -1,3 +1,9 @@
+function trash ($param) {
+    Remove-ItemSafely $param
+}
+function clear_recycle() {
+    Clear-RecycleBin
+}
 function rm() {
     [CmdletBinding()]
     param (
