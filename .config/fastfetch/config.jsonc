@@ -1,0 +1,103 @@
+{
+  "logo": {
+    "color": {
+      "1": "red",
+      "2": "cyan",
+      "3": "bright_blue",
+      "4": "yellow"
+    },
+    "padding": {
+      "top": 1
+    }
+  },
+  "display": {
+    "separator": "  ›  "
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    },
+    {
+      "type": "title"
+    },
+
+    {
+      "type": "custom",
+      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    },
+
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+    },
+
+    {
+      "type": "os",
+      "key": "  ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "kernel",
+      "key": "  ",
+      "keyColor": "white"
+    },
+    {
+      "type": "packages",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+
+    {
+      "type": "terminal",
+      "key": "  ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "shell",
+      "key": "  ",
+      "keyColor": "yellow"
+    },
+
+    {
+      "type": "custom",
+      "format": "┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
+    },
+
+    {
+      "type": "host",
+      "key": "  ",
+      "keyColor": "bright_blue"
+    },
+    {
+      "type": "cpu",
+      "key": "  ",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "gpu",
+      "key": "  ",
+      "keyColor": "red"
+    },
+    {
+      "type": "memory",
+      "key": "  ",
+      "keyColor": "bright_yellow"
+    },
+    {
+      "type": "uptime",
+      "key": "   ",
+      "keyColor": "green"
+    },
+
+    {
+      "type": "custom",
+      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "            \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  "
+    }
+  ]
+}
