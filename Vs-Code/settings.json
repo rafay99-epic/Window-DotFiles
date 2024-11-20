@@ -1,0 +1,144 @@
+{
+  "tabnine.experimentalAutoImports": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "onFocusChange",
+
+  "workbench.editorAssociations": {
+    "*.docx": "default"
+  },
+  "git.enableSmartCommit": true,
+  "editor.tabCompletion": "on",
+  "workbench.editor.wrapTabs": true,
+  "auto-close-tag.insertSpaceBeforeSelfClosingTag": true,
+  "editor.inlineSuggest.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.linkedEditing": true,
+  "editor.fontWeight": "normal",
+  "explorer.confirmDelete": false,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Hack Nerd Font",
+  "notebook.lineNumbers": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.guides.bracketPairs": "active",
+  "files.autoSaveDelay": 2000,
+  "typescript.tsserver.log": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "security.workspace.trust.emptyWindow": false,
+  "security.workspace.trust.banner": "never",
+  "git.openRepositoryInParentFolders": "always",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+
+  "cmake.configureOnOpen": true,
+  "emulator.emulatorPathWindows": "C:\\Users\\Prometheus\\AppData\\Local\\Android\\Sdk\\emulator",
+  "emulator.emulatorPathLinux": "/home/prometheus/Android/Sdk/emulator",
+  "terminal.integrated.inheritEnv": false,
+  "editor.largeFileOptimizations": false,
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "icons",
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "cmake.showOptionsMovedNotification": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "git.confirmSync": false,
+  "editor.cursorBlinking": "smooth",
+  "redhat.telemetry.enabled": false,
+  "window.newWindowDimensions": "maximized",
+  "[powershell]": {
+    "editor.defaultFormatter": "ms-vscode.powershell"
+  },
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/Prometheus/.vscode/custom-scripts/styles.css",
+    "file:///C:/Users/Prometheus/.vscode/custom-scripts/script.js",
+    "file:///c:/Users/Prometheus/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
+  ],
+  "animations.Enabled": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "supermaven.allowGitignore": true,
+  "supermaven.otherWarning": false,
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "mikeburgh.xml-format"
+  },
+  "supermaven.enableFixWithSupermaven": true,
+  "workbench.sideBar.location": "right",
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "window.menuBarVisibility": "compact",
+  "git.autofetch": true,
+  "reporting.enabled": false,
+  "workbench.colorTheme": "Tokyo Night",
+  "dotnetAcquisitionExtension.allowInvalidPaths": true,
+  "[shellscript]": {
+    "editor.defaultFormatter": "shakram02.bash-beautify"
+  },
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "svelte.enable-ts-plugin": true,
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  }
+}
